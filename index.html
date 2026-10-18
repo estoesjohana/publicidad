@@ -30,6 +30,11 @@ h1 .it,h2 .it{font-style:italic;font-weight:500;color:var(--vino)}
 .hero-line{width:74px;height:2px;background:var(--oro);margin:20px auto 30px}
 .hero-sub{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:31px;color:var(--vino);margin-top:16px;line-height:1.25}
 .btn-long{padding:22px 96px;font-size:19px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hero-text{text-align:left}
+.hero-text .hero-line{margin:20px 0 30px}
+.hero-text .lead{margin-left:0}
+.hero-photo img{width:100%;height:640px;object-fit:cover;object-position:center 22%;border-radius:18px;display:block}
 .micro{margin-top:16px;font-size:13.5px;letter-spacing:.06em;opacity:.75}
 .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
 .announce{background:var(--negro);color:var(--blanco);text-align:center;
@@ -61,10 +66,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-
 .card li::before{content:'—';position:absolute;left:0;color:var(--vino);font-weight:800}
 .card.destacado li::before{color:var(--oro)}
 .tag{position:absolute;top:-15px;left:42px;background:var(--mostaza);color:var(--vino-deep);font-size:12px;font-weight:800;letter-spacing:.18em;padding:7px 16px;border-radius:999px;text-transform:uppercase}
+.dudas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;max-width:1000px;margin:52px auto 0;text-align:left}
+.dudas h4{font-family:'Playfair Display',serif;font-size:21px;color:var(--vino-dark);margin-bottom:8px}
+.dudas p{font-size:15.5px;line-height:1.6;color:#4a4238}
 footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px;font-size:14px}
 @media(max-width:720px){h1{font-size:37px}h2{font-size:36px}.wrap{padding:0 22px}section{padding:70px 0}
 .nav-in{padding:12px 18px}.brand .brandname{font-size:21px}.nav-cta{padding:11px 18px;font-size:13px}
-.hero-brand{font-size:36px}.hero-sub{font-size:24px}.btn-long{padding:20px 44px}}
+.hero-brand{font-size:36px}.hero-sub{font-size:24px}.btn-long{padding:20px 44px}
+.hero-grid{grid-template-columns:1fr;gap:34px}.hero-photo img{height:430px}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
 </head>
@@ -76,7 +85,8 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
 </div></nav>
 
 <section>
-  <div class="wrap center">
+  <div class="wrap hero-grid">
+   <div class="hero-text">
     <p class="hero-brand">@estoesjohana</p>
     <div class="hero-line"></div>
     <h1>Publicidad para marcas locales<br><span class="it">Jacksonville, Florida</span></h1>
@@ -84,6 +94,9 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
     <p class="lead">No vendo espacios publicitarios: pongo tu marca frente a una comunidad real de mujeres que ya me conocen, me escuchan y compran por mi recomendación.</p>
     <a class="btn btn-long" href="#paquetes">Reserva mi espacio</a>
     <p class="micro">Pago en línea, fecha reservada al confirmar.</p>
+    <p style="margin-top:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--vino)">Solo 10 cupos para noviembre</p>
+   </div>
+   <div class="hero-photo"><img src="foto-heroe.jpg" alt="Johanna Brizuela, creadora de @estoesjohana"></div>
   </div>
 </section>
 
@@ -105,6 +118,7 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
 <section id="paquetes">
   <div class="wrap center">
     <p class="kicker">Los paquetes</p>
+    <p style="font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--vino);margin-bottom:18px">Solo 10 cupos para noviembre</p>
     <h2>Elige cómo quieres <span class="it">aparecer</span></h2>
     <div class="paquetes">
       <div class="card">
@@ -135,7 +149,12 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
         <a class="btn light" href="https://buy.stripe.com/eVq28qfMs0L43AxaMteME1P">Reservar VIP</a>
       </div>
     </div>
-    <p class="micro" style="max-width:640px;margin-left:auto;margin-right:auto">Condiciones: pago adelantado para reservar tu fecha · el contenido lo grabo, edito y publico yo, en colaboración con tu marca. ¿Dudas? Escríbeme por WhatsApp: +1 (904) 629-3118.</p>
+    <div class="dudas">
+      <div><h4>¿Cuándo se publica?</h4><p>Tu publicidad se publica <b>5 días después de la grabación</b>.</p></div>
+      <div><h4>¿Necesitas mi logo o materiales?</h4><p>No necesito tu logo: es un <b>video orgánico con publicidad</b>, grabado por mí, en mi voz y mi estilo.</p></div>
+      <div><h4>¿Puedo verlo antes?</h4><p>Sí: <b>todo pasa por tu aprobación</b> antes de publicarse.</p></div>
+    </div>
+    <p class="micro" style="max-width:640px;margin-left:auto;margin-right:auto;margin-top:34px">Condiciones: pago adelantado para reservar tu fecha · el contenido lo grabo, edito y publico yo, en colaboración con tu marca. ¿Dudas? Escríbeme por WhatsApp: +1 (904) 629-3118.</p>
   </div>
 </section>
 

@@ -67,10 +67,14 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-
 .card li::before{content:'—';position:absolute;left:0;color:var(--vino);font-weight:800}
 .card.destacado li::before{color:var(--oro)}
 .tag{position:absolute;top:-15px;left:42px;background:var(--mostaza);color:var(--vino-deep);font-size:12px;font-weight:800;letter-spacing:.18em;padding:7px 16px;border-radius:999px;text-transform:uppercase}
-.prueba{text-align:center;padding:64px 0 8px}
-.prueba .kicker{margin-bottom:20px}
-.prueba .nombres{font-family:'Playfair Display',serif;font-size:21px;line-height:1.6;color:var(--vino-dark);margin:0 auto;white-space:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px 4px 12px}
-.prueba .nombres::-webkit-scrollbar{display:none}
+body{padding-bottom:62px}
+.prueba{position:fixed;bottom:0;left:0;right:0;z-index:95;background:var(--vino-deep);overflow:hidden;padding:13px 0;box-shadow:0 -8px 30px rgba(56,9,15,.35)}
+.prueba .track{display:flex;width:max-content;animation:desliza 30s linear infinite}
+.prueba .nombres{font-family:'Playfair Display',serif;font-size:26px;line-height:1.3;color:var(--crema);white-space:nowrap;padding-right:12px}
+.prueba .nombres span{white-space:nowrap}
+.prueba .nombres i{color:var(--oro);font-style:normal;padding:0 14px}
+.prueba .nombres .lbl{font-family:'Inter',sans-serif;font-weight:800;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--mostaza);padding-right:20px}
+@keyframes desliza{to{transform:translateX(-50%)}}
 .prueba .nombres span{white-space:nowrap}
 .prueba .nombres i{color:var(--oro);font-style:normal;padding:0 10px}
 .dudas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;max-width:1000px;margin:52px auto 0;text-align:left}
@@ -105,10 +109,10 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
   </div>
 </section>
 
-<section style="padding:0">
-  <div class="wrap prueba">
-    <p class="kicker">Marcas que ya han trabajado conmigo</p>
-    <p class="nombres"><span>Beauty Spot by GTbrows</span><i>·</i><span>GT Brows</span><i>·</i><span>Mani Secrets Nails</span><i>·</i><span>Vicky Ojeda Fit Club</span><i>·</i><span>Estetica Cindy Leal</span><i>·</i><span>Ann J Hairstylist</span><i>·</i><span>Coli Pets</span><i>·</i><span>Aura of the Beauty</span><i>·</i><span>Blooming Beauty</span><i>·</i><span>A1000 Spinning Studio</span><i>·</i><span>Shaddai Auto Detailing</span><i>·</i><span>Porter Tax Multiservices</span><i>·</i><span>Yuni Desire</span></p>
+<section class="prueba">
+  <div class="track">
+    <p class="nombres"><span class="lbl">Marcas que ya han trabajado conmigo</span><span>Beauty Spot by GTbrows</span><i>·</i><span>GT Brows</span><i>·</i><span>Mani Secrets Nails</span><i>·</i><span>Vicky Ojeda Fit Club</span><i>·</i><span>Estetica Cindy Leal</span><i>·</i><span>Ann J Hairstylist</span><i>·</i><span>Coli Pets</span><i>·</i><span>Aura of the Beauty</span><i>·</i><span>Blooming Beauty</span><i>·</i><span>A1000 Spinning Studio</span><i>·</i><span>Shaddai Auto Detailing</span><i>·</i><span>Porter Tax Multiservices</span><i>·</i><span>Yuni Desire</span></p>
+    <p class="nombres"><span class="lbl">Marcas que ya han trabajado conmigo</span><span>Beauty Spot by GTbrows</span><i>·</i><span>GT Brows</span><i>·</i><span>Mani Secrets Nails</span><i>·</i><span>Vicky Ojeda Fit Club</span><i>·</i><span>Estetica Cindy Leal</span><i>·</i><span>Ann J Hairstylist</span><i>·</i><span>Coli Pets</span><i>·</i><span>Aura of the Beauty</span><i>·</i><span>Blooming Beauty</span><i>·</i><span>A1000 Spinning Studio</span><i>·</i><span>Shaddai Auto Detailing</span><i>·</i><span>Porter Tax Multiservices</span><i>·</i><span>Yuni Desire</span></p>
   </div>
 </section>
 

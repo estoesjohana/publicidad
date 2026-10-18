@@ -26,6 +26,10 @@ h1 .it,h2 .it{font-style:italic;font-weight:500;color:var(--vino)}
   background:var(--vino);color:var(--blanco);box-shadow:0 18px 40px rgba(110,20,35,.30)}
 .btn:hover{transform:translateY(-2px)}
 .btn.light{background:var(--blanco);color:var(--vino-dark)}
+.hero-brand{font-family:'Playfair Display',serif;font-weight:800;font-size:50px;color:var(--vino-dark);line-height:1.05}
+.hero-line{width:74px;height:2px;background:var(--oro);margin:20px auto 30px}
+.hero-sub{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:31px;color:var(--vino);margin-top:16px;line-height:1.25}
+.btn-long{padding:22px 96px;font-size:19px}
 .micro{margin-top:16px;font-size:13.5px;letter-spacing:.06em;opacity:.75}
 .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
 .announce{background:var(--negro);color:var(--blanco);text-align:center;
@@ -34,7 +38,8 @@ h1 .it,h2 .it{font-style:italic;font-weight:500;color:var(--vino)}
 nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid #eadfc6}
 .nav-in{max-width:1200px;margin:0 auto;padding:14px 48px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:14px;color:var(--vino-dark);text-decoration:none;font-weight:800;letter-spacing:.06em}
-.brand .hand{font-size:44px;color:var(--vino);line-height:1}
+.brand .brandname{font-family:'Playfair Display',serif;font-weight:800;font-size:29px;color:var(--vino);line-height:1;white-space:nowrap;letter-spacing:0}
+.nav-cta{white-space:nowrap}
 .nav-cta{background:var(--vino);color:#fff;padding:12px 26px;border-radius:999px;text-decoration:none;font-weight:800;font-size:14px}
 /* stats */
 .dark{background:var(--vino-deep);color:var(--crema)}
@@ -57,23 +62,27 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-
 .card.destacado li::before{color:var(--oro)}
 .tag{position:absolute;top:-15px;left:42px;background:var(--mostaza);color:var(--vino-deep);font-size:12px;font-weight:800;letter-spacing:.18em;padding:7px 16px;border-radius:999px;text-transform:uppercase}
 footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px;font-size:14px}
-@media(max-width:720px){h1{font-size:40px}h2{font-size:36px}.wrap{padding:0 22px}section{padding:70px 0}}
+@media(max-width:720px){h1{font-size:37px}h2{font-size:36px}.wrap{padding:0 22px}section{padding:70px 0}
+.nav-in{padding:12px 18px}.brand .brandname{font-size:21px}.nav-cta{padding:11px 18px;font-size:13px}
+.hero-brand{font-size:36px}.hero-sub{font-size:24px}.btn-long{padding:20px 44px}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="announce">Propuesta de patrocinio publicitario · <b>Reserva tu fecha</b></div>
 <nav><div class="nav-in">
-  <a class="brand" href="#"><span class="hand">@estoesjohana</span></a>
+  <a class="brand" href="#"><span class="brandname">@estoesjohana</span></a>
   <a class="nav-cta" href="#paquetes">Reservar mi espacio</a>
 </div></nav>
 
 <section>
   <div class="wrap center">
-    <p class="kicker">Publicidad para marcas locales · Jacksonville, Florida</p>
-    <h1>Tu marca frente a una <span class="it">comunidad que sí compra</span></h1>
+    <p class="hero-brand">@estoesjohana</p>
+    <div class="hero-line"></div>
+    <h1>Publicidad para marcas locales<br><span class="it">Jacksonville, Florida</span></h1>
+    <p class="hero-sub">Tu marca frente a una comunidad que sí compra</p>
     <p class="lead">No vendo espacios publicitarios: pongo tu marca frente a una comunidad real de mujeres que ya me conocen, me escuchan y compran por mi recomendación.</p>
-    <a class="btn" href="#paquetes">Ver los paquetes</a>
+    <a class="btn btn-long" href="#paquetes">Reserva mi espacio</a>
     <p class="micro">Pago en línea, fecha reservada al confirmar.</p>
   </div>
 </section>
@@ -104,6 +113,7 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
         <ul>
           <li>4 historias en @estoesjohana presentando tu marca a mi comunidad</li>
           <li>1 historia en @entrenosotrasmujerclub</li>
+          <li>Publicidad directa con un cupón de descuento de tu marca en mis dos comunidades: la gratuita de mujeres de Jacksonville (51 mujeres, 100% locales) y Entre Nosotras Mujer Club, que también tiene miembros viviendo en Jacksonville</li>
           <li>Grabadas y publicadas por mí, en mi voz y mi estilo</li>
         </ul>
         <!-- Link de pago Stripe del Paquete Básico $100 (creado por Johanna el 18 oct 2026) -->

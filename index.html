@@ -30,6 +30,7 @@ h1 .it,h2 .it{font-style:italic;font-weight:500;color:var(--vino)}
 .hero-line{width:74px;height:2px;background:var(--oro);margin:20px auto 30px}
 .hero-sub{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:31px;color:var(--vino);margin-top:16px;line-height:1.25}
 .btn-long{padding:22px 96px;font-size:19px}
+.hero-city{display:block;font-style:normal;font-weight:700;font-size:25px;letter-spacing:.03em;color:var(--vino);margin-top:12px}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
 .hero-text{text-align:left}
 .hero-text .hero-line{margin:20px 0 30px}
@@ -68,7 +69,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-
 .tag{position:absolute;top:-15px;left:42px;background:var(--mostaza);color:var(--vino-deep);font-size:12px;font-weight:800;letter-spacing:.18em;padding:7px 16px;border-radius:999px;text-transform:uppercase}
 .prueba{text-align:center;padding:64px 0 8px}
 .prueba .kicker{margin-bottom:20px}
-.prueba .nombres{font-family:'Playfair Display',serif;font-size:22px;line-height:1.9;color:var(--vino-dark);max-width:980px;margin:0 auto}
+.prueba .nombres{font-family:'Playfair Display',serif;font-size:21px;line-height:1.6;color:var(--vino-dark);margin:0 auto;white-space:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px 4px 12px}
+.prueba .nombres::-webkit-scrollbar{display:none}
 .prueba .nombres span{white-space:nowrap}
 .prueba .nombres i{color:var(--oro);font-style:normal;padding:0 10px}
 .dudas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;max-width:1000px;margin:52px auto 0;text-align:left}
@@ -92,9 +94,7 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
 <section>
   <div class="wrap hero-grid">
    <div class="hero-text">
-    <p class="hero-brand">@estoesjohana</p>
-    <div class="hero-line"></div>
-    <h1>Publicidad para marcas locales<br><span class="it">Jacksonville, Florida</span></h1>
+    <h1>Publicidad para marcas locales<span class="hero-city">Jacksonville, Florida</span></h1>
     <p class="hero-sub">Tu marca frente a una comunidad que sí compra</p>
     <p class="lead">No vendo espacios publicitarios: pongo tu marca frente a una comunidad real de mujeres que ya me conocen, me escuchan y compran por mi recomendación.</p>
     <a class="btn btn-long" href="#paquetes">Reserva mi espacio</a>

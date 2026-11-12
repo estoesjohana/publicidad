@@ -6,28 +6,28 @@
 <title>Propuesta de patrocinio publicitario — @estoesjohana | Johanna Brizuela</title>
 <style>
 :root{
-  --vino:#6E1423; --vino-dark:#4A0D18; --vino-deep:#38090F;
-  --blanco:#FFFFFF; --crema:#F6F0E3; --crema-2:#EFE6D2;
-  --negro:#1C1A17; --tinta:#1C1A17; --oro:#C9A86A; --mostaza:#F5D67B;
+  --vino:#3E0111; --vino-dark:#3E0111; --vino-deep:#3E0111;
+  --blanco:#FFFFFF; --crema:#FDF9E4; --crema-2:#FDF9E4;
+  --negro:#000000; --tinta:#000000; --oro:#FDF9E4; --mostaza:#FDF9E4;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{overflow-x:hidden}
-body{font-family:'Inter',sans-serif;color:var(--tinta);background:var(--blanco);-webkit-font-smoothing:antialiased}
+body{font-family:'Montserrat',sans-serif;color:var(--tinta);background:var(--blanco);-webkit-font-smoothing:antialiased}
 .wrap{max-width:1200px;margin:0 auto;padding:0 48px}
 section{padding:110px 0;position:relative;overflow:hidden}
 .kicker{font-size:12.5px;font-weight:800;letter-spacing:.34em;text-transform:uppercase;margin-bottom:28px;color:var(--vino)}
-h1,h2{font-family:'Playfair Display',serif;font-weight:700;line-height:1.08;letter-spacing:-.015em;color:var(--vino-dark)}
+h1,h2{font-family:'Baloo 2',sans-serif;font-weight:800;line-height:1.08;letter-spacing:-.015em;color:var(--vino-dark)}
 h1{font-size:56px} h2{font-size:50px}
-h1 .it,h2 .it{font-style:italic;font-weight:500;color:var(--vino)}
-.lead{font-size:20px;line-height:1.7;margin-top:24px;max-width:620px;color:#4a4238}
-.hand{font-family:'Pinyon Script',cursive;font-weight:400}
+h1 .it,h2 .it{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;color:var(--vino)}
+.lead{font-size:20px;line-height:1.7;margin-top:24px;max-width:620px;color:rgba(0,0,0,.75)}
+.hand{font-family:'Playfair Display',serif;font-style:italic;font-weight:400}
 .btn{display:inline-block;margin-top:34px;padding:20px 54px;border-radius:999px;
   font-weight:800;font-size:18px;letter-spacing:.02em;text-decoration:none;transition:transform .25s,box-shadow .25s;
-  background:var(--vino);color:var(--blanco);box-shadow:0 18px 40px rgba(110,20,35,.30)}
+  background:var(--vino);color:var(--blanco);box-shadow:0 18px 40px rgba(62,1,17,.30)}
 .btn:hover{transform:translateY(-2px)}
 .btn.light{background:var(--blanco);color:var(--vino-dark)}
 .hero-brand{font-family:'Playfair Display',serif;font-weight:800;font-size:50px;color:var(--vino-dark);line-height:1.05}
-.hero-line{width:74px;height:2px;background:var(--oro);margin:20px auto 30px}
+.hero-line{width:74px;height:2px;background:var(--vino);margin:20px auto 30px}
 .hero-sub{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:31px;color:var(--vino);margin-top:16px;line-height:1.25}
 .btn-long{padding:22px 96px;font-size:19px}
 .hero-city{display:block;font-style:normal;font-weight:700;font-size:25px;letter-spacing:.03em;color:var(--vino);margin-top:12px}
@@ -38,10 +38,11 @@ h1 .it,h2 .it{font-style:italic;font-weight:500;color:var(--vino)}
 .hero-photo img{width:100%;height:640px;object-fit:cover;object-position:center 22%;border-radius:18px;display:block}
 .micro{margin-top:16px;font-size:13.5px;letter-spacing:.06em;opacity:.75}
 .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+.logo-pub{display:block;margin:0 auto 28px;width:min(300px,72vw);height:auto}
 .announce{background:var(--negro);color:var(--blanco);text-align:center;
   font-size:12.5px;font-weight:800;letter-spacing:.26em;padding:11px 20px;text-transform:uppercase}
-.announce b{color:#F5D67B}
-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid #eadfc6}
+.announce b{color:#FDF9E4}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(62,1,17,.15)}
 .nav-in{max-width:1200px;margin:0 auto;padding:14px 48px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:14px;color:var(--vino-dark);text-decoration:none;font-weight:800;letter-spacing:.06em}
 .brand .brandname{font-family:'Playfair Display',serif;font-weight:800;font-size:29px;color:var(--vino);line-height:1;white-space:nowrap;letter-spacing:0}
@@ -51,35 +52,35 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-
 .dark{background:var(--vino-deep);color:var(--crema)}
 .dark h2{color:var(--blanco)} .dark h2 .it{color:var(--oro)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-top:56px}
-.stat b{display:block;font-family:'Inter',sans-serif;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-size:40px;color:var(--blanco);margin-bottom:8px}
+.stat b{display:block;font-family:'Montserrat',sans-serif;font-weight:800;font-variant-numeric:tabular-nums lining-nums;font-size:40px;color:var(--blanco);margin-bottom:8px}
 .stat span{font-size:15.5px;line-height:1.6;opacity:.88}
 /* paquetes */
 .paquetes{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:36px;margin-top:56px;max-width:1000px;margin-left:auto;margin-right:auto}
-.card{border:1px solid #eadfc6;border-radius:26px;padding:48px 42px;background:var(--blanco);text-align:left;position:relative}
+.card{border:1px solid rgba(62,1,17,.15);border-radius:26px;padding:48px 42px;background:var(--blanco);text-align:left;position:relative}
 .card.destacado{background:var(--vino-deep);color:var(--crema);border:none}
-.card h3{font-family:'Playfair Display',serif;font-size:34px;color:var(--vino-dark)}
+.card h3{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:34px;color:var(--vino-dark)}
 .card.destacado h3{color:var(--blanco)}
-.precio{font-family:'Inter',sans-serif;font-size:52px;font-weight:800;font-variant-numeric:tabular-nums lining-nums;color:var(--vino);margin:14px 0 22px}
+.precio{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:800;font-variant-numeric:tabular-nums lining-nums;color:var(--vino);margin:14px 0 22px}
 .card.destacado .precio{color:var(--mostaza)}
 .card ul{list-style:none}
-.card li{font-size:16.5px;line-height:1.55;padding:10px 0 10px 30px;position:relative;border-bottom:1px dashed #e8ddc0}
-.card.destacado li{border-bottom-color:rgba(246,240,227,.25)}
+.card li{font-size:16.5px;line-height:1.55;padding:10px 0 10px 30px;position:relative;border-bottom:1px dashed rgba(62,1,17,.18)}
+.card.destacado li{border-bottom-color:rgba(253,249,228,.25)}
 .card li::before{content:'—';position:absolute;left:0;color:var(--vino);font-weight:800}
 .card.destacado li::before{color:var(--oro)}
-.tag{position:absolute;top:-15px;left:42px;background:var(--mostaza);color:var(--vino-deep);font-size:12px;font-weight:800;letter-spacing:.18em;padding:7px 16px;border-radius:999px;text-transform:uppercase}
+.tag{position:absolute;top:-15px;left:42px;background:var(--vino);color:var(--crema);font-size:12px;font-weight:800;letter-spacing:.18em;padding:7px 16px;border-radius:999px;text-transform:uppercase}
 body{padding-bottom:46px}
-.prueba{position:fixed;bottom:0;left:0;right:0;z-index:95;background:#0B0B0B;overflow:hidden;padding:8px 0;box-shadow:0 -6px 22px rgba(0,0,0,.35)}
+.prueba{position:fixed;bottom:0;left:0;right:0;z-index:95;background:#000000;overflow:hidden;padding:8px 0;box-shadow:0 -6px 22px rgba(0,0,0,.35)}
 .prueba .track{display:flex;width:max-content;animation:desliza 30s linear infinite}
 .prueba .nombres{font-family:'Playfair Display',serif;font-size:18px;line-height:1.3;color:#FFFFFF;white-space:nowrap;padding-right:12px}
 .prueba .nombres span{white-space:nowrap}
 .prueba .nombres i{color:var(--oro);font-style:normal;padding:0 14px}
-.prueba .nombres .lbl{font-family:'Inter',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFFFF;padding-right:18px}
+.prueba .nombres .lbl{font-family:'Montserrat',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFFFF;padding-right:18px}
 @keyframes desliza{to{transform:translateX(-50%)}}
 .prueba .nombres span{white-space:nowrap}
 .prueba .nombres i{color:var(--oro);font-style:normal;padding:0 10px}
 .dudas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;max-width:1000px;margin:52px auto 0;text-align:left}
-.dudas h4{font-family:'Playfair Display',serif;font-size:21px;color:var(--vino-dark);margin-bottom:8px}
-.dudas p{font-size:15.5px;line-height:1.6;color:#4a4238}
+.dudas h4{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:21px;color:var(--vino-dark);margin-bottom:8px}
+.dudas p{font-size:15.5px;line-height:1.6;color:rgba(0,0,0,.75)}
 /* REGLA DE JOHANNA (18 oct 2026): TODO el texto de sus páginas va CENTRADO */
 .hero-text{text-align:center}
 .hero-text .lead{margin-left:auto;margin-right:auto}
@@ -89,13 +90,13 @@ body{padding-bottom:46px}
 .card li{padding:10px 0}
 .card li::before{position:static;margin-right:9px}
 .dudas{text-align:center}
-footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px;font-size:14px}
+footer{background:var(--negro);color:#FDF9E4;text-align:center;padding:44px 20px;font-size:14px}
 @media(max-width:720px){h1{font-size:37px}h2{font-size:36px}.wrap{padding:0 22px}section{padding:70px 0}
 .nav-in{padding:12px 18px}.brand .brandname{font-size:21px}.nav-cta{padding:11px 18px;font-size:13px}
 .hero-brand{font-size:36px}.hero-sub{font-size:24px}.btn-long{padding:20px 44px}
 .hero-grid{grid-template-columns:1fr;gap:34px}.hero-photo img{height:430px}}
 </style>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="announce">Propuesta de patrocinio publicitario · <b>Reserva tu fecha</b></div>
@@ -107,6 +108,7 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
 <section>
   <div class="wrap hero-grid">
    <div class="hero-text">
+    <img class="logo-pub" src="logo-johanna-vino.png" alt="Johanna Brizuela — Esto es Johanna">
     <h1>Publicidad para marcas locales<span class="hero-city">Jacksonville, Florida</span></h1>
     <p class="hero-sub">Tu marca frente a una comunidad que sí compra</p>
     <p class="lead">No vendo espacios publicitarios: pongo tu marca frente a una comunidad real de mujeres que ya me conocen, me escuchan y compran por mi recomendación.</p>
@@ -127,6 +129,7 @@ footer{background:var(--negro);color:#cfc6b4;text-align:center;padding:44px 20px
 
 <section class="dark">
   <div class="wrap">
+    <img class="logo-pub" src="logo-johanna-blanco.png" alt="Johanna Brizuela — Esto es Johanna">
     <p class="kicker" style="color:var(--oro)">Mi comunidad, con números reales</p>
     <h2>Mujeres de Jacksonville que <span class="it">consumen, asisten y recomiendan</span></h2>
     <div class="stats">
